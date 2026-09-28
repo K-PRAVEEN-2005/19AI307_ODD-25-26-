@@ -1,76 +1,48 @@
-# Ex.No:1(D) ARRAYS
-
+# Ex.No:1(E) STRINGS AND MATH FUNCTION
 ## QUESTION:
-Write a Java program to print all elements in an array that are greater than a given value
-
+Write a Java program to calculate the power of a given number.
 
 ## AIM:
-To write a Java program that prints all elements in an array greater than a given value.
+To write a Java program to compute the power of a number using the Math.pow() function in Java.
 
 ## ALGORITHM :
-1. Start the program and create a Scanner object.
-2. Read the size n and elements of the array.
-3. Read a value to compare with.
-4. Use a loop to check and print elements greater than the given value.
-5. End the program.
-
-
-
-
+1. Start the program.
+2. Import the necessary package 'java.util'
+3. Read the base value from the user.
+4. Read the exponent value from the user.
+5. Use the Math.pow(base, exponent) function to calculate the power.
+6. Display the result.
+7. Stop the program.
+   
 ## PROGRAM:
+/*
 
-### Program to Implement Variables and Operators Using Java
+Program to implement a Strings and Math Function using Java
+Developed by: PRAVEEN K
+RegisterNumber: 212223230153
 
-**Developed by:** PRAVEEN K
-**Register Number:** 212223230153
-### SOURCE CODE:
+*/
+
+
+## SOURCE CODE:
 ```java
-import java.util.Scanner;
+import java.util.*;
 
-public class ElementsGreaterThanX {
-
+public class PowerCalculation {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        double base = sc.nextDouble();
+        double exponent = sc.nextDouble();
+        double result = Math.pow(base, exponent);
 
-        int n = scanner.nextInt();     // size of array
-        int[] arr = new int[n];
-
-        for(int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();  // array elements
-        }
-
-        int x = scanner.nextInt();     // value to compare
-
-        boolean found = false;
-
-        for(int i = 0; i < n; i++) {
-            if(arr[i] > x) {
-                System.out.println(arr[i]);
-                found = true;
-            }
-        }
-
-        if(!found) {
-            System.out.println("No elements greater than " + x);
-        }
+        System.out.println(base + " raised to the power of " + exponent + " is: " + result);
     }
 }
-
 ```
 
-
-
-
-
-
 ## OUTPUT:
-<img width="1141" height="823" alt="image" src="https://github.com/user-attachments/assets/34a186f8-3e64-4b59-a0c6-c0fd2da49e52" />
-
+<img width="916" height="243" alt="Screenshot 2025-11-17 002442" src="https://github.com/user-attachments/assets/d21e7585-e8eb-419b-bb72-f65695781651" />
 
 
 ## RESULT:
-The program successfully prints all array elements greater than the given value.
-
-
-
-
+Thus, the Java program to calculate the power of a given number using Math function was successfully executed.
